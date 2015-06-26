@@ -1,0 +1,55 @@
+
+
+    All Gists
+
+    mzech
+
+    0
+
+mzech / C#-Multiplication Table
+Created 41 seconds ago
+
+    Code
+    Revisions 1
+
+Embed URL
+
+HTTPS clone URL
+
+You can clone with HTTPS or SSH.
+
+C# - Multiplication table
+
+C#-Multiplication Table
+
+// Print out a multiplication table.  This is a console app with a method like PrintTable(int numRows)
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+//This is a code sample of how to make a console application that outputs a multiplication table . This example up to 3.  
+
+namespace Multiplication_Table
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i <= 3; i++)
+            {
+                Console.Write(i + "\t");
+                for (int m = 1; m <= 3; m++) 
+                {
+                    if (i > 0) Console.Write(i * m + "\t");
+                    else Console.Write(m + "\t");
+                }
+                Console.Write("\n");
+            }
+ 
+            Console.ReadLine();
+        }
+    }
+}
+
+//Also on GIST
